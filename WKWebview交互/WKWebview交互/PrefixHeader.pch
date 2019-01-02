@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  WKWebView交互
+//
+//  Created by zhouxuanhe on 2019/1/2.
+//  Copyright © 2019 xuanhe. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+#define kStatusBarH ([UIApplication sharedApplication].statusBarFrame.size.height)//(44/20)
+#define kNavBarH  (44 + kStatusBarH)
+#define kStatusTabH  ((kStatusBarH == 44.0) ? 34.0 : 0.0)
+#define kTabBarH  ((kStatusBarH == 44.0) ? 83.0 : 49.0)
+#define kIsiPhoneX ((kStatusBarH == 44.0) ? YES : NO)
+
+
+#endif /* PrefixHeader_pch */
