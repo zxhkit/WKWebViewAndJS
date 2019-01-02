@@ -77,7 +77,7 @@
 
 -(void)buttonClick{
     // iOS调用js里的navButtonAction方法并传入两个参数
-    [self.webView evaluateJavaScript:@"navButtonAction('Jonas',25)" completionHandler:^(id _Nullable response, NSError * _Nullable error) {
+    [self.webView evaluateJavaScript:@"navButtonAction('Xuanhe',25)" completionHandler:^(id _Nullable response, NSError * _Nullable error) {
        
         NSLog(@"response:%@,error:%@",response,error);
 
