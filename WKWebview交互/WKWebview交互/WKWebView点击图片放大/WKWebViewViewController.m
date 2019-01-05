@@ -25,7 +25,6 @@
     NSString *url = @"http://tapi.mukr.com/mapi/wphtml/index.php?ctl=app&act=news_detail&id=VGpTSDhkemFVb3Y4Y3JXTFdRR2J4UT09";
     WKWebView *webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, kNavBarH, kScreenW, kScreenH-kNavBarH)];
     webView.navigationDelegate = self;
-    webView.layer.borderWidth = 1;
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
     [self.view addSubview:webView];
     self.webView = webView;
