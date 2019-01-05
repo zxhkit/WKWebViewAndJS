@@ -14,6 +14,9 @@
 		2CF19DF721DC4EAF0098D2D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF19DF521DC4EAF0098D2D2 /* LaunchScreen.storyboard */; };
 		2CF19DFA21DC4EAF0098D2D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF19DF921DC4EAF0098D2D2 /* main.m */; };
 		2CF19E0121DC4ED40098D2D2 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 2CF19E0021DC4ED40098D2D2 /* index.html */; };
+		7D6E9BF921E0DB620055659A /* HTMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6E9BF821E0DB620055659A /* HTMLViewController.m */; };
+		7D6E9BFC21E0DB8C0055659A /* WKWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6E9BFB21E0DB8C0055659A /* WKWebViewViewController.m */; };
+		7D6E9BFF21E0DB970055659A /* UIWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6E9BFE21E0DB970055659A /* UIWebViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		2CF19DF921DC4EAF0098D2D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2CF19E0021DC4ED40098D2D2 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		2CF19E0221DC5BB90098D2D2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7D6E9BF721E0DB620055659A /* HTMLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HTMLViewController.h; path = "WKWebview交互/HTMLViewController.h"; sourceTree = SOURCE_ROOT; };
+		7D6E9BF821E0DB620055659A /* HTMLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HTMLViewController.m; path = "WKWebview交互/HTMLViewController.m"; sourceTree = SOURCE_ROOT; };
+		7D6E9BFA21E0DB8C0055659A /* WKWebViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewViewController.h; sourceTree = "<group>"; };
+		7D6E9BFB21E0DB8C0055659A /* WKWebViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewViewController.m; sourceTree = "<group>"; };
+		7D6E9BFD21E0DB970055659A /* UIWebViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWebViewViewController.h; sourceTree = "<group>"; };
+		7D6E9BFE21E0DB970055659A /* UIWebViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +74,12 @@
 				2CF19DEB21DC4EAE0098D2D2 /* AppDelegate.m */,
 				2CF19DED21DC4EAE0098D2D2 /* ViewController.h */,
 				2CF19DEE21DC4EAE0098D2D2 /* ViewController.m */,
+				7D6E9BF721E0DB620055659A /* HTMLViewController.h */,
+				7D6E9BF821E0DB620055659A /* HTMLViewController.m */,
+				7D6E9BFA21E0DB8C0055659A /* WKWebViewViewController.h */,
+				7D6E9BFB21E0DB8C0055659A /* WKWebViewViewController.m */,
+				7D6E9BFD21E0DB970055659A /* UIWebViewViewController.h */,
+				7D6E9BFE21E0DB970055659A /* UIWebViewViewController.m */,
 				2CF19DF021DC4EAE0098D2D2 /* Main.storyboard */,
 				2CF19E0021DC4ED40098D2D2 /* index.html */,
 				2CF19DF321DC4EAF0098D2D2 /* Assets.xcassets */,
@@ -110,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2CF19DE221DC4EAE0098D2D2 /* Build configuration list for PBXProject "WKWebView交互" */;
+			buildConfigurationList = 2CF19DE221DC4EAE0098D2D2 /* Build configuration list for PBXProject "WKWebview交互" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -150,6 +165,9 @@
 				2CF19DEF21DC4EAE0098D2D2 /* ViewController.m in Sources */,
 				2CF19DFA21DC4EAF0098D2D2 /* main.m in Sources */,
 				2CF19DEC21DC4EAE0098D2D2 /* AppDelegate.m in Sources */,
+				7D6E9BF921E0DB620055659A /* HTMLViewController.m in Sources */,
+				7D6E9BFF21E0DB970055659A /* UIWebViewViewController.m in Sources */,
+				7D6E9BFC21E0DB8C0055659A /* WKWebViewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,9 +310,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 953RK3RKLR;
+				DEVELOPMENT_TEAM = 4K963G24NF;
 				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = "WKWebView交互/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,9 +329,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 953RK3RKLR;
+				DEVELOPMENT_TEAM = 4K963G24NF;
 				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = "WKWebView交互/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,7 +346,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2CF19DE221DC4EAE0098D2D2 /* Build configuration list for PBXProject "WKWebView交互" */ = {
+		2CF19DE221DC4EAE0098D2D2 /* Build configuration list for PBXProject "WKWebview交互" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CF19DFB21DC4EAF0098D2D2 /* Debug */,
