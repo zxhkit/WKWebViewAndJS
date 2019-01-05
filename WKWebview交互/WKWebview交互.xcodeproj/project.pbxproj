@@ -31,6 +31,7 @@
 		7D6E9C2A21E0E4FA0055659A /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6E9C1621E0E4FA0055659A /* UIImageView+WebCache.m */; };
 		7D6E9C2B21E0E4FA0055659A /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6E9C1921E0E4FA0055659A /* UIView+WebCacheOperation.m */; };
 		7D6E9C2C21E0E4FA0055659A /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6E9C1D21E0E4FA0055659A /* UIButton+WebCache.m */; };
+		7D6E9C3221E0E6790055659A /* WKWebView+XHShowImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6E9C3121E0E6790055659A /* WKWebView+XHShowImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,8 @@
 		7D6E9C1C21E0E4FA0055659A /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		7D6E9C1D21E0E4FA0055659A /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
 		7D6E9C1E21E0E4FA0055659A /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		7D6E9C3021E0E6790055659A /* WKWebView+XHShowImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WKWebView+XHShowImage.h"; path = "WKWebview交互/WKWebView点击图片放大/WKWebView+XHShowImage.h"; sourceTree = SOURCE_ROOT; };
+		7D6E9C3121E0E6790055659A /* WKWebView+XHShowImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "WKWebView+XHShowImage.m"; path = "WKWebview交互/WKWebView点击图片放大/WKWebView+XHShowImage.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +203,8 @@
 			children = (
 				7D6E9BFA21E0DB8C0055659A /* WKWebViewViewController.h */,
 				7D6E9BFB21E0DB8C0055659A /* WKWebViewViewController.m */,
+				7D6E9C3021E0E6790055659A /* WKWebView+XHShowImage.h */,
+				7D6E9C3121E0E6790055659A /* WKWebView+XHShowImage.m */,
 			);
 			path = "WKWebView点击图片放大";
 			sourceTree = "<group>";
@@ -294,6 +299,7 @@
 				7D6E9BF921E0DB620055659A /* HTMLViewController.m in Sources */,
 				7D6E9C2C21E0E4FA0055659A /* UIButton+WebCache.m in Sources */,
 				7D6E9BFF21E0DB970055659A /* UIWebViewViewController.m in Sources */,
+				7D6E9C3221E0E6790055659A /* WKWebView+XHShowImage.m in Sources */,
 				7D6E9BFC21E0DB8C0055659A /* WKWebViewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
