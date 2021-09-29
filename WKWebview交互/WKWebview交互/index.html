@@ -37,6 +37,7 @@
         <h2></h2>
         <button onclick="alertAction()">点击alert弹框</button>
         <button onclick="buttonAction()">点击向iOS传数据</button>
+        <button onclick="syHelloAction()">JS调iOS-sayhello</button>
         <button onclick="confirmAction()">点击confirm弹框</button>
 
         
@@ -56,6 +57,14 @@
         }
         function confirmAction(){
             confirm("确定要清空数据吗？")
+        }
+        function syHelloAction(){
+            try{
+                <!--js向ios传递数据-->
+                window.webkit.messageHandlers.sayHello.postMessage("我是js传递过来的数据-sayHello");
+            }catch (e){
+                
+            }
         }
         function buttonAction(){
             try{
